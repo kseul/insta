@@ -1,2 +1,2 @@
-# insta
-clone
+# Instagram-practice
+Instagram-practice
