@@ -49,7 +49,6 @@
 
 .user-data__id {
   font-size: 32px;
-  font-weight: 00;
 }
 
 .user-data__profile-edit {
@@ -74,13 +73,13 @@
   font-size: 20px;
 }
 
-.section__profile-follow {
+.section__profile-follow__list {
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
 
-.section__profile-follow .follow-data {
+.section__profile-follow__list .follow-data {
   margin-right: 40px;
 }
 
@@ -92,9 +91,20 @@
   font-weight: 500;
 }
 
+/* Add */
+.header__buttom-text {
+  visibility: hidden;
+}
+
 @media screen and (max-width: 736px) {
   .main {
-    padding: 16px 16px 24px 16px;
+    padding: 0;
+  }
+
+  .main-profile__header {
+    height: 110px;
+    margin: 16px;
+    margin-bottom: 0;
   }
 
   .main-profile__header__img {
@@ -102,25 +112,63 @@
     display: flex;
     justify-content: start;
     margin-right: 0px;
+    margin-left: 16px;
+    max-height: 100px;
   }
   .main-profile__header__img img {
     width: 77px;
     height: 77px;
   }
+
   .section__profile-user {
     display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-bottom: 20px;
+    flex-wrap: wrap;
+    margin-top: 5px;
+  }
+
+  .user-data__id {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .user-data__profile-edit {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    order: 1;
+    margin-top: 12px;
+    margin-left: 0;
   }
 
   .user-data__profile-edit__link {
-    background-color: yellowgreen;
-    order: 2;
+    padding: 7px 95px;
   }
 
   .user-data__setting i {
-    background-color: yellow;
-    order: 1;
+    flex-wrap: wrap;
+    order: 0;
+    margin-right: 30px;
+  }
+
+  .section__profile-follow {
+    display: flex;
+    flex-wrap: wrap;
+    visibility: hidden;
+  }
+
+  .section__profile-name {
+    font-weight: 500;
+    width: 100%;
+  }
+
+  .header__buttom-text {
+    display: flex;
+    justify-content: flex-start;
+    visibility: visible;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 20px;
+    margin-left: 32px;
   }
 }
