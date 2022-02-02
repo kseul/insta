@@ -18,7 +18,7 @@
 
 .footer-top li {
   margin: 0 8px 12px 8px;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .footer-bottom {

@@ -27,9 +27,18 @@
 }
 
 .post-bar__tab__post {
-  display: block;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: auto;
+}
+
+.post-bar__tab__post-icon {
+  margin-right: 4px;
+  margin-bottom: 2px;
+}
+
+.post-bar__tab__post-name {
 }
 
 .post-bar__tab.selected {
@@ -44,4 +53,38 @@
   top: -1px;
   left: 0;
   right: 0;
+}
+
+@media screen and (max-width: 736px) {
+  .main-profile__post-bar {
+  }
+
+  .post-bar__tab {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .post-bar__tab.selected .post-bar__tab__post-icon {
+    color: #029aff;
+  }
+
+  .post-bar__tab.selected::before {
+    display: none;
+  }
+
+  .post-bar__tab__post-icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .post-bar__tab:nth-child(1),
+  .post-bar__tab:nth-child(2) {
+    margin: 0;
+  }
+
+  .post-bar__tab__post-name {
+    display: none;
+  }
 }

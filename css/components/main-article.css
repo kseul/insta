@@ -5,6 +5,7 @@
 }
 
 .main-article__posts {
+  position: relative;
   display: flex;
   justify-content: space-between;
   margin-bottom: 28px;
@@ -20,6 +21,15 @@
   margin-bottom: 3px;
 }
 
+.main-article__posts .post-img:hover::after {
+  content: "";
+  display: flex;
+  position: absolute;
+  height: 30vw;
+  width: calc(33.3% - 2px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
 @media screen and (min-width: 736px) {
   .main-article__posts .post-img {
     max-height: 293px;
@@ -30,5 +40,14 @@
 
   .main-article__posts {
     margin-bottom: 0px;
+  }
+
+  .main-article__posts .post-img:hover::after {
+    content: "";
+    max-height: 293px;
+    height: 30vw;
+    width: calc(33.3% - 20px);
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0.2);
   }
 }
