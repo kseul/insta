@@ -22,14 +22,25 @@
 
 .main-profile__header__img {
   max-width: 291px;
+  height: auto;
   width: 35vw;
   display: flex;
   justify-content: center;
   margin-right: 30px;
+  background-image: url(http://blog.jinbo.net/attach/615/200937431.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50%;
+width: 180px;
+height: 180px;
 }
 
 .main-profile__header__img img {
   border-radius: 50%;
+  height: 170px;
+  width: 170px;
+  image
 }
 
 .main-profile__header__section {
